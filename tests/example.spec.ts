@@ -42,6 +42,7 @@ test.describe('New Todo', () => {
     // Check that input is empty.
     await expect(page.locator('.new-todo')).toBeEmpty();
     await checkNumberOfTodosInLocalStorage(page, 1);
+    // await 
   });
 
   test('should append new items to the bottom of the list', async ({ page }) => {
