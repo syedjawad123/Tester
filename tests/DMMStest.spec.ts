@@ -5,7 +5,7 @@ test('Awsome test',async({page})=>{
         email: string;
         password: string;
     }
-    let name: Awsome = {email:"", password:""};
+    let name: Awsome = {email:"qa_test25@yahoo.com", password:"asdf.123"};
 await page.goto("https://in.mail.yahoo.com/")
 await page.waitForLoadState();
 await page.locator("//a[text()='Sign in']").click();
